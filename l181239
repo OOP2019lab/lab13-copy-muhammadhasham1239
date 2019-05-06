@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+template <typename t1,typename t2>
+
+t1 Getmax(t1 a,t2 b){
+if(a>b){
+	return a;
+}
+else{
+	return b;
+}
+
+}
+
+
+template <typename t3,typename t4>
+t3 Getmin(t3 a,t4 b){
+	if(a<b){
+		return a;
+	}
+	else{
+		return b;
+	}
+
+}
+/*
+int main () 
+{
+  int i=5, j=6, k;
+  long l=10, m=5, n;
+  k=Getmax<int>(i,j);
+  n=Getmin<long>(l,m);
+  cout << k << endl;
+  cout << n << endl;
+  system("pause");
+  return 0;
+}*/
+
+
+int main () 
+{
+  char i='Z';
+  int  j=6, k;
+  long l=10, m=5, n;
+  k=Getmax<int,long>(i,m);
+  n=Getmin<int,char>(j,l);
+  cout << k << endl;
+  cout << n << endl;
+  system("pause");
+
+}
+
+//No error occur in part(c)
+//No error in part(e)
